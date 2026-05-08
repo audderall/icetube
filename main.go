@@ -1,13 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"icetube/core"
-)
+import "icetube/cli"
 
 func main() {
-	var search_term string
-	fmt.Print("search term: ")
-	fmt.Scan(&search_term)
-	core.Search(search_term)
+	cli.Execute()
 }
